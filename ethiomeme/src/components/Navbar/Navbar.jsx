@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 import IconBtn from "@material-ui/core/IconButton"
 import MoodIcn from "@material-ui/icons/Mood"
 import Avatar from "@material-ui/core/Avatar"
-import SearchIcn from "@material-ui/icons/SearchSharp"
 import MenuIcn from "@material-ui/icons/Menu"
 
 const Navbar = ({setToggle}) => {
