@@ -1,9 +1,5 @@
 import React from 'react'
 import  Avatar  from "@material-ui/core/Avatar";
-import LikeIcn from "@material-ui/icons/ThumbUpOutlined"
-import LikeIcnActive from "@material-ui/icons/ThumbUp"
-import DislikeIcn from "@material-ui/icons/ThumbDownOutlined"
-import DislikeIcnActive from "@material-ui/icons/ThumbDown"
 import {useState} from "react"
 import "./Meme.css"
 const Meme = () => {
@@ -34,8 +30,8 @@ const Meme = () => {
 
 export default Meme
 
-function getLikeClasses(like) {
-    let likeClasses = "btn mr-md-3 mb-2 mb-md-0 btn-round";
-    likeClasses += like == true ? "btn-danger" : "btn-outline-danger";
-    return likeClasses;
-}
+// function getLikeClasses(like) {
+//     let likeClasses = "btn mr-md-3 mb-2 mb-md-0 btn-round";
+//     likeClasses += like === true ? "btn-danger" : "btn-outline-danger";
+//     return likeClasses;
+// }
