@@ -1,0 +1,29 @@
+.home__screen {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+.home__memes {
+  padding: 20px;
+}
+
+.home__upload {
+}
+
+.home__profile {
+}
+.home__screen .home__profile {
+  margin-top: 5%;
+}
+.home__memes {
+  padding: 20px;
+}
+
+.home__profile {
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .home__screen {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,16 @@
+.meme {
+}
+
+.card__bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card__bottom div {
+}
+
+@media (max-width: 400px) {
+  .card__username {
+    font-size: medium !important;
+  }
+}

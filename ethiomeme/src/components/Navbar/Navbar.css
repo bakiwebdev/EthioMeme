@@ -1,0 +1,50 @@
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__middle {
+  display: flex;
+}
+.nav__middle .search__bar input {
+  border: 1px solid rgb(240, 19, 77);
+  border-radius: 25px;
+  width: 20vw;
+}
+.search__bar {
+  display: flex;
+}
+.search__icn {
+  margin-left: -50px;
+  border-radius: 50%;
+}
+
+.search__icn:hover {
+  background: rgba(240, 19, 77, 0.3);
+}
+@font-face {
+  font-family: Chiret;
+  src: url("../../assets/fonts/3\ -\ Kiros\ ኪሮስ.ttf");
+}
+.am__brand {
+  font-family: Chiret;
+  font-size: xx-large;
+}
+.humberger {
+  display: none;
+}
+@media (max-width: 305px) {
+  .linkss i img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-ul {
+    display: none !important;
+  }
+  .humberger {
+    display: block;
+  }
+}

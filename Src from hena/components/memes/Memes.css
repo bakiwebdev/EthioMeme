@@ -1,0 +1,8 @@
+.memes {
+}
+
+@media (max-width: 580px) {
+  .memes {
+    display: block;
+  }
+}

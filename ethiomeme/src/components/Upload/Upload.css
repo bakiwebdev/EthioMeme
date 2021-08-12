@@ -1,0 +1,23 @@
+* {
+  outline: none;
+  border: none;
+  background: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+form img {
+  border: 1px solid "linear-gradient(to right, blue, purple)";
+}
+form input {
+  border: 1px solid salmon;
+}
+
+#file__input::-webkit-file-upload-button {
+  display: none;
+}

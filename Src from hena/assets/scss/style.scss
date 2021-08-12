@@ -1,0 +1,568 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+
+$primary: #494ca2;
+$success: #94aa2a;
+$danger: #f0134d;
+$warning: #f1bc31;
+$info: #64c4ed;
+body{
+	font-family: $font-primary;
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: normal;
+	background: #111;
+}
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+button {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: $font-primary;
+}
+
+
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+//HEADING SECTION
+.heading-section{
+	font-size: 32px;
+	color: $white;
+	small{
+		font-size: 16px;
+		color: $white;
+	}
+}
+
+
+//BUTTONS
+.btn {
+	padding: 11px 16px;
+	cursor: pointer;
+	border-width: 1px;
+	border-radius: 0px;
+	box-shadow: none !important;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	overflow: hidden !important;
+	&:hover, &:active, &:focus {
+		outline: none !important;
+		-webkit-box-shadow: 0px 12px 20px -6px rgba(0,0,0,0.21);
+		-moz-box-shadow: 0px 12px 20px -6px rgba(0,0,0,0.21);
+		box-shadow: 0px 12px 20px -6px rgba(0,0,0,0.21);
+	}
+	&.btn-link{
+		background: transparent;
+		color: $primary;
+		border:none;
+		box-shadow: none;
+		padding: 0;
+	}
+	&.btn-primary {
+		background: $primary;
+		border-color: $primary;
+		color: $white;
+		&:focus{
+			border-color: darken($primary,5%) !important;
+			background: darken($primary,5%) !important;
+		}
+		&.btn-link{
+			background: transparent;
+			color: $primary;
+			border:none;
+			box-shadow: none;
+		}
+	}
+	&.btn-white {
+		background: $white;
+		border-color: $white;
+		color: $black;
+	}
+	&.btn-round{
+		@include border-radius(40px);
+	}
+	&.btn-link{
+		border:none;
+		box-shadow: none;
+	}
+	&.btn-secondary{
+		color: $white;
+		border-color: $secondary;
+		background: $secondary;
+		&:focus{
+			border-color: darken($secondary,5%) !important;
+			background: darken($secondary,5%) !important;
+		}
+		&.btn-link{
+			color: $secondary;
+			background: transparent;
+		}
+	}
+	&.btn-success{
+		color: $white;
+		background: $success;
+		border-color: $success;
+		&:focus{
+			border-color: darken($success,5%) !important;
+			background: darken($success,5%) !important;
+		}
+		&.btn-link{
+			color: $success;
+			background: transparent;
+		}
+	}
+	&.btn-danger{
+		color: $white;
+		border-color: $danger;
+		background: $danger;
+		&:focus{
+			border-color: darken($danger,5%) !important;
+			background: darken($danger,5%) !important;
+		}
+		&.btn-link{
+			color: $danger;
+			background: transparent;
+		}
+	}
+	&.btn-warning{
+		color: $white;
+		border-color: $warning;
+		background: $warning;
+		&:focus{
+			border-color: darken($warning,5%) !important;
+			background: darken($warning,5%) !important;
+		}
+		&.btn-link{
+			color: $warning;
+			background: transparent;
+		}
+	}
+	&.btn-info{
+		color: $white;
+		border-color: $info;
+		background: $info;
+		&:focus{
+			border-color: darken($info,5%) !important;
+			background: darken($info,5%) !important;
+		}
+		&.btn-link{
+			color: $info;
+			background: transparent;
+		}
+	}
+	&.btn-dark{
+		color: $white;
+		border-color: $dark;
+		background: $dark;
+		&:focus{
+			border-color: darken($dark,5%) !important;
+			background: darken($dark,5%) !important;
+		}
+		&.btn-link{
+			color: $dark;
+			background: transparent;
+		}
+	}
+	&.btn-outline-primary{
+		color: $primary;
+		border-color: $primary;
+		&:hover,&:focus{
+			color: $white;
+			background: $primary !important;
+			border-color: $primary !important;
+		}
+	}
+	&.btn-outline-success{
+		border-color: $success;
+		color: $success;
+		&:hover,&:focus{
+			color: $white;
+			background: $success !important;
+			border-color: $success !important;
+		}
+	}
+	&.btn-outline-secondary{
+		border-color: $secondary;
+		color: $secondary;
+		&:hover,&:focus{
+			color: $white;
+			background: $secondary !important;
+			border-color: $secondary !important;
+		}
+	}
+	&.btn-outline-info{
+		border-color: $info;
+		color: $info;
+		&:hover,&:focus{
+			color: $white;
+			background: $info !important;
+			border-color: $info !important;
+		}
+	}
+	&.btn-outline-warning{
+		border-color: $warning;
+		color: $warning;
+		&:hover,&:focus{
+			color: $white;
+			background: $warning !important;
+			border-color: $warning !important;
+		}
+	}
+	&.btn-outline-danger{
+		border-color: $danger;
+		color: $danger;
+		&:hover,&:focus{
+			color: $white;
+			background: $danger !important;
+			border-color: $danger !important;
+		}
+	}
+	&.btn-outline-dark{
+		border-color: $dark;
+		color: $dark;
+		&:hover,&:focus{
+			color: $white;
+			background: $dark !important;
+			border-color: $dark !important;
+		}
+	}
+	&.btn-outline-light{
+		border-color: $light;
+	}
+	//SIZE
+	&.btn-sm{
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	&.btn-lg{
+		padding: 17px 24px;
+		font-size: 16px;
+		border-radius: 40px;
+	}
+
+
+	//SOCIAL BUTTON
+	&.btn-fb{
+		background: #4f69a2;
+		border-color: #4f69a2;
+		color: $white;
+	}
+	&.btn-outline-fb{
+		background: transparent;
+		border:1px solid #4f69a2;
+		color: #4f69a2;
+	}
+	&.btn-link-fb{
+		color: #4f69a2;
+	}
+	//TWITTER
+	&.btn-twitter{
+		background: #69b6f0;
+		border-color: #69b6f0;
+		color: $white;
+	}
+	&.btn-outline-twitter{
+		background: transparent;
+		border:1px solid #69b6f0;
+		color: #69b6f0;
+	}
+	&.btn-link-twitter{
+		color: #69b6f0;
+	}
+	//LINKEDIN
+	&.btn-linkedin{
+		background: #2884ba;
+		border-color: #2884ba;
+		color: $white;
+	}
+	&.btn-outline-linkedin{
+		background: transparent;
+		border:1px solid #2884ba;
+		color: #2884ba;
+	}
+	&.btn-link-linkedin{
+		color: #2884ba;
+	}
+	//PINTEREST
+	&.btn-pinterest{
+		background: #d03940;
+		border-color: #d03940;
+		color: $white;
+	}
+	&.btn-outline-pinterest{
+		background: transparent;
+		border:1px solid #d03940;
+		color: #d03940;
+	}
+	&.btn-link-pinterest{
+		color: #d03940;
+	}
+	//DRIBBLE
+	&.btn-dribbble{
+		background: #ea6294;
+		border-color: #ea6294;
+		color: $white;
+	}
+	&.btn-outline-dribbble{
+		background: transparent;
+		border:1px solid #ea6294;
+		color: #ea6294;
+	}
+	&.btn-link-dribbble{
+		color: #ea6294;
+	}
+}
+
+.dropdown{
+	.dropdown-menu{
+		border: none;
+		background: $white;
+		-webkit-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+		-moz-box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+		box-shadow: 0px 10px 34px -20px rgba(0,0,0,0.41);
+		.dropdown-item{
+			font-size: 13px;
+			color: rgba(0,0,0,.7);
+			font-weight: 400;
+			i{
+				color: rgba(0,0,0,.4);
+			}
+			&:hover, &:focus{
+				background: transparent;
+				color: $black;
+			}
+		}
+	}
+}
+
+
+
+//SPECIAL BUTTONS
+.checkbox-primary input[type="checkbox"]:checked:after {
+  color: $primary;
+}
+.checkbox-danger input[type="checkbox"]:checked:after {
+  color: $danger;
+}
+.checkbox-info input[type="checkbox"]:checked:after {
+  color: $info;
+}
+.checkbox-warning input[type="checkbox"]:checked:after {
+  color: $warning;
+}
+.checkbox-success input[type="checkbox"]:checked:after {
+  color: $success;
+}
+.checkbox-dark input[type="checkbox"]:checked:after {
+  color: $dark;
+}
+.checkbox-primary{
+  color: $primary;
+}
+.checkbox-danger{
+  color: $danger;
+}
+.checkbox-info{
+  color: $info;
+}
+.checkbox-warning{
+  color: $warning;
+}
+.checkbox-success{
+  color: $success;
+}
+.checkbox-dark{
+  color: $dark;
+}
+.checkbox{
+	span{
+		margin-left: 35px;
+	}
+}
+
+.checkbox input[type=checkbox], // Needed to overwrite bootstraps styles.
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  margin-top: 0;
+  margin-left: 0;
+  &:disabled {
+    opacity: 0.65;
+  }
+}
+
+input[type="checkbox"]:checked:after,
+input[type="checkbox"]:after {
+  visibility: visible;
+  font-family: 'Ionicons';
+  display: inline-block;
+  color: rgba(0,0,0,.2);
+  line-height: 1;
+  margin-top: 0;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+}
+
+input[type="checkbox"]:checked:after {
+  font-size: 30px;
+  content: '\f148';
+  line-height: .4;
+  margin-top: 7px;
+}
+
+input[type="checkbox"]:after {
+  font-size: 37px;
+  content: '\f15c';
+  line-height: .4;
+  margin-top: 6px;
+}
+
+//RADIO BUTTONS
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    // color: #666;
+}
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 100%;
+    background: #000;
+}
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    // background: #F87DA9;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.radio-primary{
+	color: $primary;
+}
+.radio-success{
+	color: $success;
+}
+.radio-danger{
+	color: $danger;
+}
+.radio-warning{
+	color: $warning;
+}
+.radio-info{
+	color: $info;
+}
+.radio-dark{
+	color: $dark;
+}
+
+.radio-primary input[type="radio"]:checked + label:after {
+  background: $primary;
+  border-color: $primary
+}
+.radio-success input[type="radio"]:checked + label:after {
+  background: $success;
+  border-color: $success;
+}
+.radio-danger input[type="radio"]:checked + label:after {
+  background: $danger;
+  border-color: $danger;
+}
+.radio-warning input[type="radio"]:checked + label:after {
+  background: $warning;
+  border-color: $warning;
+}
+.radio-info input[type="radio"]:checked + label:after {
+  background: $info;
+  border-color: $info;
+}
+.radio-dark input[type="radio"]:checked + label:after {
+  background: $dark;
+  border-color: $dark;
+}
+
+
+
+.radio-primary input[type="radio"]:checked + label:before {
+  border-color: $primary
+}
+.radio-success input[type="radio"]:checked + label:before {
+  border-color: $success;
+}
+.radio-danger input[type="radio"]:checked + label:before {
+  border-color: $danger;
+}
+.radio-warning input[type="radio"]:checked + label:before {
+  border-color: $warning;
+}
+.radio-info input[type="radio"]:checked + label:before {
+  border-color: $info;
+}
+.radio-dark input[type="radio"]:checked + label:before {
+  border-color: $dark;
+}

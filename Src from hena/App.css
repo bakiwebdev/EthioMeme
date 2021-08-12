@@ -1,0 +1,9 @@
+.app__body {
+  padding-top: 5rem;
+}
+
+@media (max-width: 450px) {
+  .app__body {
+    padding-top: 8rem;
+  }
+}
